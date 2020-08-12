@@ -1,0 +1,11 @@
+checks:
+  - url: https://google.com
+  - url: https://microsoft.com
+    method: GET
+    expect: 403
+  - url: https://yahoo.com
+    method: OPTIONS
+  - url: https://github.com
+    header:
+      Authorization:
+        - Bearer token
